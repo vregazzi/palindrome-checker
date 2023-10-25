@@ -13,22 +13,22 @@ public:
 
     void enqueue_to_front(T value)
     {
-        backing.push_front(value);
+        backing.push_head(value);
     }
 
     void enqueue_to_back(T value)
     {
-        backing.push_back(value);
+        backing.push_tail(value);
     }
 
     T dequeue_from_front()
     {
-        return backing.pop_front();
+        return backing.pop_head();
     }
 
     T dequeue_from_back()
     {
-        return backing.pop_back();
+        return backing.pop_tail();
     }
 
     T peek_front()
